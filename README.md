@@ -35,8 +35,11 @@ This repository is based on Python 3.8, Pytorch 1.8.1, CUDA 11.2 on Ubuntu 18.04
 1. Parameter Settings:
 
    You should adjust the parameters for the training of AdvGCGNA, they can be found in arguments.py.
+   
    You should specify the classes for the traning. In our paper, we use ['Airplane', 'Table','Car'] for the class_choice .
+   
    We suggest only train with 2 classes due to the limited performance of the Generator.
+   
    After the GAN training, you should adjust the class_choice to ['Table'] if you want to generate adversarial point clouds for 'Table' class.
  
 2. Run:
