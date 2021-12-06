@@ -13,7 +13,6 @@ from models.pointcnn import PointCNNCls
 from torch.autograd import Variable
 
 from arguments import Arguments
-from pc_util import point_cloud_three_views
 
 import time
 import visdom
