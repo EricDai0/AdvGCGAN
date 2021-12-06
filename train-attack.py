@@ -22,7 +22,6 @@ import os,sys
 
 import math
 import pointnet2_ops.pointnet2_utils as pn2_utils
-from PIL import Image
 from knn_cuda import KNN
 
 os.environ['CUDA_VISIBLE_DEVICES'] = '3'
