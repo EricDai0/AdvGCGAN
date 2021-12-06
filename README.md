@@ -31,7 +31,6 @@ This repository is based on Python 3.8, Pytorch 1.8.1, CUDA 11.2 on Ubuntu 18.04
 
 
 # Usage
---
 
 1. Parameter Settings:
 
@@ -65,7 +64,6 @@ The basic structure of our codes is adopted from the paper [_3D Point Cloud Gene
 
 
 # Reference
---
 
 Please cite our paper if you found any helpful information:
 
