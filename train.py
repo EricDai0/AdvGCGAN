@@ -13,13 +13,11 @@ from models.pointcnn import PointCNNCls
 from torch.autograd import Variable
 
 from arguments import Arguments
-from pc_util import point_cloud_three_views
 
 import time
 import visdom
 import numpy as np
 import os,sys
-from PIL import Image
 from knn_cuda import KNN
 
 os.environ['CUDA_VISIBLE_DEVICES'] = '5'
