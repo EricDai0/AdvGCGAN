@@ -3,7 +3,7 @@
 The code repository for our paper Generating Unrestricted 3D Adversarial Point Clouds [arXiv](http://arxiv.org/abs/2111.08973)
 
 # Installation
---
+
 This repository is based on Python 3.8, Pytorch 1.8.1, CUDA 11.2 on Ubuntu 18.04.
 
 1. Set up environments for the codes.
@@ -27,7 +27,7 @@ This repository is based on Python 3.8, Pytorch 1.8.1, CUDA 11.2 on Ubuntu 18.04
    unzip shapenetcore_partanno_segmentation_benchmark_v0.zip
    ```
 
-5. Download the pretrained PointNet, PointNet++, and DGCNN model from [GoogleDrive](https://drive.google.com/drive/folders/1gdbQzLKFiXCMELI_e44YVHOlgaaoYYjd?usp=sharing), extract them to the folder `checkpoints/shapenetpart_pointnet_train/`, `checkpoints/shapenetpart_pointnet2_train/`, and `checkpoints/shapenetpart_dgcnn_train/`. 
+5. Download the pretrained PointNet, PointNet++, and DGCNN model from [GoogleDrive](https://drive.google.com/drive/folders/1gdbQzLKFiXCMELI_e44YVHOlgaaoYYjd?usp=sharing), copy them to the folder `checkpoints/shapenetpart_pointnet_train/`, `checkpoints/shapenetpart_pointnet2_train/`, and `checkpoints/shapenetpart_dgcnn_train/`. We also give some of our pre-trained files.
 
 
 # Usage
@@ -36,7 +36,9 @@ This repository is based on Python 3.8, Pytorch 1.8.1, CUDA 11.2 on Ubuntu 18.04
 1. Parameter Settings:
 
    You should adjust the parameters for the training of AdvGCGNA, they can be found in arguments.py.
-   You should specify the classes for the traning. In our paper, we use ['Airplane', 'Table','Car'] for the class_choice . We suggest only train with 2 classes due to the limited performance of the Generator. After the GAN training, you should adjust the class_choice to ['Table'] if you want to generate adversarial point clouds for 'Table' class.
+   You should specify the classes for the traning. In our paper, we use ['Airplane', 'Table','Car'] for the class_choice .
+   We suggest only train with 2 classes due to the limited performance of the Generator.
+   After the GAN training, you should adjust the class_choice to ['Table'] if you want to generate adversarial point clouds for 'Table' class.
  
 2. Run:
    
@@ -49,7 +51,8 @@ This repository is based on Python 3.8, Pytorch 1.8.1, CUDA 11.2 on Ubuntu 18.04
 
 3. Evaluate
 
-   We also provide the evaluation file to test the performance of different attack models. You should follow the two (Optioanl) steps for using our provided codes. The evaluation contains SRS and SOR defense methods. You also should adjust the parameters in arguments.py.
+   We also provide the evaluation file to test the performance of different attack models. You should follow the two (Optioanl) steps for using our provided codes. 
+   The evaluation contains SRS and SOR defense methods. You also should adjust the parameters in arguments.py.
    
    ```shell
    python evaluate.py
