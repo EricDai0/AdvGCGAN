@@ -5,7 +5,7 @@ class Arguments:
         self._parser = argparse.ArgumentParser(description='Arguments for AdvGCGAN.')
         # Dataset arguments
         self._parser.add_argument('--dataset_path', type=str, default='/shapenetcore_partanno_segmentation_benchmark_v0', help='Dataset file path.')
-        self._parser.add_argument('--class_choice', type=str, default=['Table'], help='Select one class to generate. [Airplane, Table, Car] (default:all_class)')
+        self._parser.add_argument('--class_choice', type=str, default=['Table'], help='Select classes to generate. for example ['Airplane', 'Table', 'Car']')
         self._parser.add_argument('--num_class', type=int, default=3, help='Number of classes in the GAN traning process, for example 3 for [Airplane, Table, Car]')
 
         
@@ -25,9 +25,9 @@ class Arguments:
         self._parser.add_argument('--visdom_color', type=int, default=4, help='Number of colors for visdom pointcloud visualization. (default:4)')
         
         #Adversarial Training arguments
-        self._parser.add_argument('--model', type=str, default='dgcnn', help='choose victim model type')
+        self._parser.add_argument('--model', type=str, default='dgcnn', help='choose victim model')
         self._parser.add_argument('--model_path', default='shapenetpart_dgcnn_train/epoch_182', help='path to store victim model') 
-        self._parser.add_argument('--target_class', type=int, default=2, help='choose one class to be attack, for example 1 for Table class')
+        self._parser.add_argument('--target_class', type=int, default=2, help='choose one class to attack, for example 1 for Table class')
         self._parser.add_argument('--target_true_class', type=int, default=15, help='True class label in orignal dataset, for example 15 for Table classs')
         self._parser.add_argument('--target_attack_label', type=int, default=None, help='choose one class to target attack label')
         
