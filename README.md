@@ -34,7 +34,7 @@ This repository is based on Python 3.8, Pytorch 1.8.1, CUDA 11.2 on Ubuntu 18.04
 
 1. Parameter Settings:
 
-   You should adjust the parameters for the training of AdvGCGNA, they can be found in arguments.py.
+   You should adjust the parameters for the training of AdvGCGAN, they can be found in arguments.py.
    
    You should specify the classes for the traning. In our paper, we use ['Airplane', 'Table','Car'] for the class_choice .
    
