@@ -27,7 +27,7 @@ This repository is based on Python 3.8, Pytorch 1.8.1, CUDA 11.2 on Ubuntu 18.04
    unzip shapenetcore_partanno_segmentation_benchmark_v0.zip
    ```
 
-5. Download the pretrained PointNet, PointNet++, and DGCNN model from [GoogleDrive](https://drive.google.com/drive/folders/1gdbQzLKFiXCMELI_e44YVHOlgaaoYYjd?usp=sharing), copy them to the folder `checkpoints/shapenetpart_pointnet_train/`, `checkpoints/shapenetpart_pointnet2_train/`, and `checkpoints/shapenetpart_dgcnn_train/`. We also give some of our pre-trained files.
+5. Download the pretrained PointNet, PointNet++, and DGCNN model from [GoogleDrive](https://drive.google.com/file/d/1tZRZCABBIjLKfPZtUN62RWhk9t9zO4Vw/view?usp=drive_link), copy them to the folder `checkpoints/shapenetpart_pointnet_train/`, `checkpoints/shapenetpart_pointnet2_train/`, and `checkpoints/shapenetpart_dgcnn_train/`. We also give some of our pre-trained files.
 
 
 # Usage
